@@ -5,17 +5,19 @@ import addQuote from './actions/quoteActions';
 import './index.css';
 
 const QuoteApp = ({ quote, author, addQuote }) => {
-  useEffect(() => {
-    fetchQuote();
-  }, [fetchQuote]);
-  const fetchQuote = () => {
+  const fetchQuote = useCallback(() => {
     fetch('https://api.quotable.io/random')
       .then((response) => response.json())
       .then((data) => {
         addQuote(data.content, data.author);
       })
       .catch((error) => console.error('Error fetching quote:', error));
-  };
+  }, [addQuote]);
+
+  useEffect(() => {
+    fetchQuote();
+  }, [fetchQuote]);
+
 
   return (
   <div className="container d-flex justify-content-center " id="quote-box">
