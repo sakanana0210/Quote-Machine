@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { connect } from 'react-redux';
 import addQuote from './actions/quoteActions';
 import './index.css';
