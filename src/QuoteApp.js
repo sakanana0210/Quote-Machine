@@ -33,7 +33,7 @@ const QuoteApp = ({ quote, author, addQuote }) => {
                 <button id="new-quote" className="btn btn-primary " onClick={fetchQuote}>
                   New Quote
                 </button></div>
-                <a rel="noopener" className="d-flex justify-content-end" id="tweet-quote" target="_blank" href={`https://twitter.com/intent/tweet?text=${quote}── ${author}`}> Share on Twitter</a>
+                <a rel="noreferrer" className="d-flex justify-content-end" id="tweet-quote" target="_blank" href={`https://twitter.com/intent/tweet?text=${quote}── ${author}`}> Share on Twitter</a>
           </div>
         </div>
     </div>
