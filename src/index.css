@@ -1,0 +1,19 @@
+#appContainer{
+    padding: 130px 0;
+}
+
+#quote-box{
+    border: 1.5px solid #4b9dc9;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f0f3f5;;
+}
+
+p{
+    color: #4b9dc9;
+}
+
+h1{
+    color: #3787b3;
+
+}
